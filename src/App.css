@@ -2,13 +2,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .light-mode {
-  @apply bg-gray-200  text-gray-800;
+  @apply bg-gray-200  text-[#292929];
 }
 
 .dark-mode {
-  @apply bg-gray-800 text-gray-200;
+  @apply bg-[#292929] text-gray-200;
 }
 
+.dark-component {
+  @apply bg-[#383838] text-gray-200;
+}
+.light-component {
+  @apply bg-gray-100  text-[#292929];
+}
 body {
   @apply transition-colors duration-300;
 }

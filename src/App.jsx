@@ -17,11 +17,11 @@ function App() {
       <TopNav dark={(mode) => setDarkMode(mode)} />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home darkMode={darkMode} />} />
+        <Route path="/projects" element={<Projects darkMode={darkMode} />} />
+        <Route path="/services" element={<Services darkMode={darkMode} />} />
+        <Route path="/about" element={<About darkMode={darkMode} />} />
+        <Route path="/contact" element={<Contact darkMode={darkMode} />} />
       </Routes>
       <MainNav darkMode={darkMode} />
     </Router>

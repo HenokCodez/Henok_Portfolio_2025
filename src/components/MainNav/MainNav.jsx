@@ -20,7 +20,7 @@ function MainNav({ darkMode }) {
   }, []);
 
   return (
-    <nav className={`flex items-center p-4 fixed bottom-0 left-0 right-0 ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <nav className={`flex items-center p-4 fixed bottom-0 left-0 right-0 ${darkMode ? "dark-component " : "light-component "}`}>
       <ul className="flex items-center justify-between w-full md:px-24">
         <li className="text-lg font-bold pb-2 border-b-2 border-transparent transition-all hover:border-black dark:hover:border-white">
           <Link to="/">Home</Link>
