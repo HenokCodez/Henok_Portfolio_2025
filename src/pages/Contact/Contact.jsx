@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
   return (
-    <section id="contact" className="min-h-screen px-4 py-16 bg-gray-50 dark:bg-gray-900">
+    <section id="contact" className={`min-h-screen px-4 pb-28 pt-16 lg:pb-16 ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="max-w-3xl mx-auto text-center">
-        <motion.h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white" initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+        <motion.h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white" initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           📬 Contact Me
         </motion.h2>
 
@@ -15,10 +15,22 @@ const Contact = () => {
 
         <motion.div className="space-y-4 text-left text-gray-700 dark:text-gray-200" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.6 }}>
           <p>
-            <strong>Email:</strong> henok@example.com
+            <strong>Email:</strong> henokbinayew21@gmail.com
           </p>
           <p>
-            <strong>Portfolio:</strong>{" "}
+            <strong>Upwork:</strong>{" "}
+            <a href="https://www.henokdev.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              www.henokdev.com
+            </a>
+          </p>
+          <p>
+            <strong>Fiverr:</strong>{" "}
+            <a href="https://www.henokdev.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              www.henokdev.com
+            </a>
+          </p>
+          <p>
+            <strong>WhatsApp:</strong>{" "}
             <a href="https://www.henokdev.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
               www.henokdev.com
             </a>
@@ -49,4 +61,3 @@ const Contact = () => {
 };
 
 export default Contact;
->>>>>>> 19e7decaab27ae0c18554da4e2e02da8437f4b63

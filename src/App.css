@@ -13,7 +13,7 @@
   @apply bg-[#383838] text-gray-200;
 }
 .light-component {
-  @apply bg-gray-100  text-[#292929];
+  @apply bg-gray-300  text-[#292929];
 }
 body {
   @apply transition-colors duration-300;
