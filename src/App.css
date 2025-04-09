@@ -2,19 +2,32 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .light-mode {
-  @apply bg-gray-200  text-[#292929];
+  @apply bg-gray-100 text-[#292929];
 }
 
 .dark-mode {
-  @apply bg-[#292929] text-gray-200;
+  @apply bg-gradient-to-b from-[#292929] to-[#1a1a1a] text-gray-200;
 }
 
 .dark-component {
-  @apply bg-[#383838] text-gray-200;
+  @apply bg-gradient-to-br from-[#383838] to-[#2a2a2a] text-gray-200 shadow-lg;
 }
+
 .light-component {
-  @apply bg-gray-300  text-[#292929];
+  @apply bg-gradient-to-br from-gray-300 to-gray-200 text-[#292929] shadow-md;
 }
+
 body {
   @apply transition-colors duration-300;
+  scroll-behavior: smooth;
+}
+
+.animate-blink {
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
