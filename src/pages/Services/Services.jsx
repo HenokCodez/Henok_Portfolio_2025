@@ -52,7 +52,7 @@ function Services({ darkMode }) {
   ];
 
   return (
-    <section className={`min-h-screen px-4 pb-28 pt-16 lg:pb-16 ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <section className={`min-h-screen px-4 pb-28 pt-16  ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.h2

@@ -20,7 +20,7 @@ function MainNav({ darkMode }) {
   }, []);
 
   return (
-    <nav className={`flex items-center p-4 fixed bottom-0 left-0 right-0 ${darkMode ? "dark-component " : "light-component "}`}>
+    <nav className={`flex items-center p-4 fixed bottom-0 left-0 right-0 ${darkMode ? "dark-component" : "light-component"}`}>
       <ul className="flex items-center justify-between w-full md:px-24">
         <li className="text-lg font-bold pb-2 border-b-2 border-transparent transition-all hover:border-black dark:hover:border-white">
           <Link to="/">Home</Link>
@@ -40,20 +40,24 @@ function MainNav({ darkMode }) {
         </li>
 
         <li className="md:hidden relative">
-          <button className="cursor-pointer" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
-            <Menu />
+          <button className="cursor-pointer p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Mobile Menu" aria-expanded={menuOpen}>
+            <Menu className="w-6 h-6" />
           </button>
         </li>
       </ul>
 
       {menuOpen && (
-        <div ref={menuRef} className={`absolute bottom-18 rounded-4xl right-5 p-5 h-auto w-60 md:w-96 ${darkMode ? "dark-mode" : "light-mode"} shadow-lg`}>
+        <div ref={menuRef} className={`absolute bottom-16 right-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-2xl transform transition-all duration-300 ease-in-out ${menuOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"}`} role="menu">
           <ul className="flex flex-col gap-4">
-            <li className="rounded-full p-2 text-center transition-all hover:bg-gray-200 dark:hover:bg-gray-700">
-              <Link to="/about">About</Link>
+            <li className="rounded-lg p-3 text-center text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all">
+              <Link to="/about" className="block w-full h-full" onClick={() => setMenuOpen(false)}>
+                About
+              </Link>
             </li>
-            <li className="rounded-full p-2 text-center transition-all hover:bg-gray-200 dark:hover:bg-gray-700">
-              <Link to="/contact">Contact</Link>
+            <li className="rounded-lg p-3 text-center text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all">
+              <Link to="/contact" className="block w-full h-full" onClick={() => setMenuOpen(false)}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
