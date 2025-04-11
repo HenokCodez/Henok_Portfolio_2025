@@ -99,7 +99,7 @@ const Contact = ({ darkMode }) => {
     {
       icon: <Linkedin className="w-8 h-8 text-blue-700" />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/henok-binayew",
+      href: "https://www.linkedin.com/in/henok-binayew/",
     },
     {
       icon: <Github className="w-8 h-8 text-gray-800 dark:text-gray-200" />,
