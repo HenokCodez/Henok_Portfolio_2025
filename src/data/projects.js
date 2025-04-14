@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Netflix Clone",
     description: "A Netflix clone built with React,API integration from themoviedb.",
-    image: "../../public/netflix.png",
+    image: "/netflix.png", // Fixed path
     link: "https://henokcodez.github.io/Netflix-Clone/",
     github: "https://github.com/HenokCodez/Netflix-Clone",
     technologies: ["React", "API integration"],
@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     title: "SKYCAST",
     description: "A weather dashboard application built with React and Tailwind CSS.",
-    image: "../../public/sky.png",
+    image: "/sky.png", // Fixed path
     link: "https://henokcodez.github.io/SKYCAST/",
     github: "https://github.com/HenokCodez/SKYCAST",
     technologies: ["React", "Weather API", "Tailwind CSS"],
@@ -23,7 +23,7 @@ const projects = [
     id: 3,
     title: "Amazon Clone",
     description: "A Fully functional e-commerce application built with React, Stripe for payments, and Express for backend.",
-    image: "../../public/amazon.png",
+    image: "/amazon.png", // Fixed path
     link: "https://amazon-by-henok.netlify.app/",
     github: "https://github.com/HenokCodez/Amazon",
     technologies: ["React", "Stripe", "API", "Node.js", "Express"],
@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: "Apple Website With React",
     description: "Apple's official website clone built with React.",
-    image: "../../public/apple-r.png",
+    image: "/apple-r.png", // Fixed path
     link: "",
     github: "https://github.com/HenokCodez/Apple-website-clone-React",
     technologies: ["React"],
@@ -43,7 +43,7 @@ const projects = [
     id: 5,
     title: "Apple Website With HTML/CSS",
     description: "Apple's official website clone built with HTML and CSS.",
-    image: "../../public/apple-v.png",
+    image: "/apple-v.png", // Fixed path
     link: "",
     github: "https://github.com/HenokCodez/Apple-web-Html-CSS",
     technologies: ["HTML", "CSS"],
@@ -53,7 +53,7 @@ const projects = [
     id: 6,
     title: "BookNest",
     description: "A full-stack web app that lets you store, manage, and organize your favorite books in one place. Add, edit, and delete book entries with ease—your personal digital bookshelf, always accessible.",
-    image: "../../public/book.png",
+    image: "/book.png", // Fixed path
     link: "",
     github: "https://github.com/HenokCodez/BookNest/",
     technologies: ["MySql", "Express", "React", "Node.js"],
@@ -63,7 +63,7 @@ const projects = [
     id: 7,
     title: "Amazon Clone",
     description: "A Fully functional e-commerce application built with React, Stripe for payments, and Firebase for backend.",
-    image: "../../public/amazon.png",
+    image: "/amazon.png", // Fixed path
     link: "https://amazon-by-henok.netlify.app/",
     github: "https://github.com/HenokCodez/Amazon",
     technologies: ["React", "Stripe", "Firebase", "API", "Node.js"],
@@ -73,7 +73,7 @@ const projects = [
     id: 8,
     title: "Tindog",
     description: "Meet new and interesting dogs nearby. Tindog is a Tinder-like app for dogs, built with React and Firebase.",
-    image: "../../public/tindog-d.png",
+    image: "/tindog-d.png", // Fixed path
     link: "https://tindog-hb.netlify.app/",
     github: "https://github.com/HenokCodez/Tindog",
     technologies: ["Html", "CSS", "Bootstrap"],
@@ -83,7 +83,7 @@ const projects = [
     id: 9,
     title: "Coffee Corner",
     description: "A cozy and inviting landing page for a local coffee shop. Designed with HTML and CSS to highlight the shop’s ambiance, signature brews, and warm atmosphere.",
-    image: "../../public/coffe-corner.png",
+    image: "/coffe-corner.png", // Fixed path
     link: "",
     github: "https://github.com/HenokCodez/Coffee-corner",
     technologies: ["HTML", "CSS"],
@@ -93,7 +93,7 @@ const projects = [
     id: 10,
     title: "Evangadi Forum",
     description: "A full-featured Q&A forum web application inspired by Evangadi’s community. Built using React, Node.js, Express, and MySQL, it allows users to register, ask questions, post answers, and interact within a structured forum system.",
-    image: "../../public/forum.png",
+    image: "/forum.png", // Fixed path
     link: "https://evangadi-forum-hb.netlify.app/",
     github: "https://github.com/HenokCodez/Evangadi-Forum",
     technologies: ["React", "Node.js", "Express", "MySQL", "JWT", "Google Sign-In API"],

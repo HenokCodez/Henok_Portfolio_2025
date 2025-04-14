@@ -72,7 +72,7 @@ function Home({ darkMode }) {
       >
         <div className="flex flex-col items-center gap-4">
           <motion.div className="size-48 rounded-full overflow-hidden shadow-xl border-4 border-blue-500/20" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}>
-            <img src="../../../public/profile.png" alt="profile image" className="w-full h-full rounded-full object-cover" loading="lazy" />
+            <img src="/profile.png" alt="profile image" className="w-full h-full rounded-full object-cover" loading="lazy" />
           </motion.div>
 
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.6 }} className="text-4xl md:text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600">
@@ -108,7 +108,7 @@ function Home({ darkMode }) {
                   className="group relative flex-shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <img src={`../../../public/${icon}`} alt={icon} className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition-transform duration-200" loading="lazy" />
+                  <img src={`/${icon}`} alt={icon} className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition-transform duration-200" loading="lazy" />
                   <span
                     className={`absolute top-[-3rem] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 ${
                       darkMode ? "bg-[#292929] text-gray-200" : "bg-gray-700 text-gray-200"

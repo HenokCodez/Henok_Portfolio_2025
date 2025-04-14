@@ -74,7 +74,7 @@ function About({ darkMode }) {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="md:w-1/3 flex justify-center">
-            <img src="../../../public/profile.png" alt="Henok Binayew" className="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-blue-500/20" loading="lazy" />
+            <img src="/profile.png" alt="Henok Binayew" className="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-blue-500/20" loading="lazy" />
           </div>
           <div className="md:w-2/3">
             <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Who I Am</h3>
