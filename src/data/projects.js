@@ -92,7 +92,7 @@ const projects = [
   {
     id: 10,
     title: "Evangadi Forum",
-    description: "A full-featured Q&A forum web application inspired by Evangadi’s community. Built using React, Node.js, Express, and MySQL, it allows users to register, ask questions, post answers, and interact within a structured forum system.",
+    description: "A Q&A forum web application inspired by Evangadi’s community.it allows users to register, ask questions, post answers, and interact within a structured forum system.",
     image: "/forum.png", // Fixed path
     link: "https://evangadi-forum-hb.netlify.app/",
     github: "https://github.com/HenokCodez/Evangadi-Forum",
