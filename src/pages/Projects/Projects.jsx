@@ -7,16 +7,8 @@ function Projects({ darkMode }) {
   const categories = ["All", "React", "HTML/CSS/JS", "Fullstack MERN", "Firebase"];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Filter projects based on the selected category
   const filteredProjects = selectedCategory === "All" ? projects : projects.filter((project) => project.category === selectedCategory);
 
-  // Animation variants for the overlay content
-  const overlayVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.2 } },
-  };
-
-  // Animation variants for the buttons
   const buttonVariants = {
     hover: { scale: 1.05, transition: { duration: 0.2 } },
     tap: { scale: 0.95 },
@@ -65,35 +57,33 @@ function Projects({ darkMode }) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ scale: 1.02 }} // Subtle scale on hover for the entire card
+                whileHover={{ scale: 1.02 }}
               >
-                {/* Image (no navigation on click) */}
-                <img src={project.image} alt={project.title} className="w-full h-64 object-cover" loading="lazy" />
+                {/* Image */}
+                <img src={project.image} alt={project.title} className="w-full h-64 object-cover pointer-events-none" loading="lazy" />
 
-                {/* Overlay */}
-                <motion.div className="absolute inset-0 bg-black/80 flex flex-col justify-center items-center text-center p-6 opacity-0" whileHover="visible" initial="hidden" variants={overlayVariants}>
+                {/* Overlay - Always visible on mobile, hover on desktop */}
+                <div
+                  className="absolute inset-0 bg-black/80 flex flex-col justify-center items-center text-center p-6 
+                             opacity-100 md:opacity-0 md:hover:opacity-100 transition-opacity duration-300 z-10"
+                >
                   {/* Title */}
-                  <motion.h3 className="text-xl font-semibold text-white mb-2" variants={overlayVariants}>
-                    {project.title}
-                  </motion.h3>
+                  <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
 
                   {/* Description */}
-                  <motion.p className="text-gray-300 mb-4" variants={overlayVariants}>
-                    {project.description}
-                  </motion.p>
+                  <p className="text-gray-300 mb-4">{project.description}</p>
 
                   {/* Technologies */}
-                  <motion.div className="flex flex-wrap justify-center gap-2 mb-6" variants={overlayVariants}>
+                  <div className="flex flex-wrap justify-center gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="px-3 py-1 bg-blue-600/50 text-white text-sm rounded-full">
                         {tech}
                       </span>
                     ))}
-                  </motion.div>
+                  </div>
 
                   {/* Buttons */}
-                  <div className="flex gap-3">
-                    {/* Visit Live Site Button (shown only if project.link exists) */}
+                  <div className="flex gap-3 flex-wrap justify-center">
                     {project.link && (
                       <motion.a
                         href={project.link}
@@ -109,7 +99,6 @@ function Projects({ darkMode }) {
                       </motion.a>
                     )}
 
-                    {/* View on GitHub Button (shown only if project.github exists) */}
                     {project.github && (
                       <motion.a
                         href={project.github}
@@ -125,7 +114,7 @@ function Projects({ darkMode }) {
                       </motion.a>
                     )}
                   </div>
-                </motion.div>
+                </div>
               </motion.div>
             ))
           ) : (
